@@ -1,37 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Tour Planner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Plan</title>
+    <link rel="icon" type="icon" href="/icon.png">
+
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        .navigation{
+            font-size: 25px;
+            display: flex;
+            gap:56%;
+            padding: 10px;
+            padding-left: 20px;
+            position: sticky;
+        }
+        .navigation ul{
+            display: flex;
+            list-style: none;
+            gap: 60px;
+            margin: 0;
+            padding-top: 9px;
+        }
+        .navigation img{
+            height: 50px;
+            padding-left: 10px;
+        }
+        .content{
+            height: 680px;
+        }
+        .travel{
+            width: 100%;
+            overflow:auto;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+            height: 680px;
+        }
+        .welcome{
+            
+            width: fit-content;
+            position: relative;
+            font-size: 100px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            top: 65px;
+            left: 10%;
+        }
+        .start{
+            position: relative;
+            width: fit-content;
+            font-size: 49px;
+            top: 65px;
+            left: 10%;    
+        }
+        .start div{
+            padding-bottom: 45px;
+        }
+        .button{
+            display: block;
+            background-color: aqua;
+            text-decoration: none;
+            width: 200px;
+            padding: 10px;
+            text-align:center;
+            
+            color: black;
+            font-size: 30px;
+        }
+        .image{
+            position: absolute;
+            width: 450px;
+            left: 57%;
+            top: 25%;
+        }
+        .image img{
+            width: 450px;     
+        }
+        .foot{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 1px;
+            padding-left: 55px;
+        }
+        .links{
+            display: flex;
+            gap: 20%;
+        }
+        .contact{
+            padding-left: 35px;
+            width: fit-content;
+        }
+        .phone{
+            list-style: none;
+            padding: 10px 30px;
+            background-image: url(/images/call.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 20px;
+            background-blend-mode: darken;
+        }
+        .mail{
+            list-style: none;
+            padding: 10px 30px;
+            background-image: url(/images/email.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 20px;
+            background-blend-mode: darken;
+        }
+        .social{
+            width: fit-content;
+        }
+        .insta img{
+            width: 45px;
+        }
+        .youtube img{  
+            width: 50px;
+        }
+        .media{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Tour Planner</h1>
-  </header>
-  <main>
-    <section id="userInputSection">
-      <h2>Plan Your Trip</h2>
-      <form id="userInputForm">
-        <label for="destination">Destination:</label>
-        <input type="text" id="destination" required>
-
-        <label for="days">Number of Days:</label>
-        <input type="number" id="days" required>
-
-        <label for="budget">Budget:</label>
-        <input type="number" id="budget" required>
-
-        <button type="button" onclick="planTrip()">Plan My Trip</button>
-      </form>
-    </section>
-
-    <section id="itinerarySection" style="display:none;">
-      <h2>Your Itinerary</h2>
-      <div id="itineraryDetails"></div>
-    </section>
-  </main>
-  <script src="script.js"></script>
+    <header>
+        <nav class="navigation">
+            <div><img src="/images/logo.png" alt="We Plan"></div>
+            <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <img class="travel" src="/images/travel.jpg" alt="travel">
+            <div class="image"><img src="/images/image.png" alt="image"></div>
+            <div class="welcome">
+                Welcome to
+                <br>
+                We Plan
+            </div> 
+            <div class="start">
+                <div>
+                    Let's Plan Your Vacation
+                </div>
+                <a class="button" href="/images/travel.jpg">Start</a>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <h1 style="font-weight: 100;">We Plan</h1>
+            <div class="links">
+                <div class="contact">
+                    <h3 style="font-weight: 100;">Get in touch:</h3> 
+                    <ul>
+                        <li class="phone">+91 8287568041</li>
+                        <li class="mail">weplan@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3 style="font-weight: 100;">Follow us on Social Media:</h3>
+                    <ul class="media">
+                        <li class="insta"><a href="https://instagram.com"><img src="/images/instagram.png" alt="insta"></a></li>
+                        <li class="youtube"><a href="https://youtube.com"><img src="/images/youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
