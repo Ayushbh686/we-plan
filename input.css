@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("1.jpg"); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 5s ease-in-out; /* Smooth transition effect for background changes */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.search-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-form input,
+.search-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.search-form button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Consistent rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Plan - Your Trusted Travel Partner</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <header>
+        <h1>We Plan - Your Trusted Travel Partner</h1>
+    </header>
+    <main>
+        <section class="search-form">
+            <h2>Plan Your Dream Vacation</h2>
+            <form id="search-form">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" list="destinations" placeholder="Enter your desired destination" autocomplete="off">
+                <datalist id="destinations">
+                    </datalist>
+                <br>
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" name="check-in" min="<?php echo date("Y-m-d"); ?>">
+                <br>
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" name="check-out">
+                <br>
+                <label for="purpose">Purpose of Visit:</label>
+                <select id="purpose" name="purpose">
+                    <option value="">Select</option>
+                    <option value="leisure">Leisure</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="business">Business</option>
+                    <option value="culture">Cultural Exploration</option>
+                </select>
+                <br>
+                <label for="age-group">Age Group:</label>
+                <select id="age-group" name="age-group">
+                    <option value="">Select</option>
+                    <option value="families">Families</option>
+                    <option value="couples">Couples</option>
+                    <option value="solo">Solo Travelers</option>
+                    <option value="all-ages">All Ages</option>
+                </select>
+                <br>
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" min="0" placeholder="Enter your budget (optional)">
+                <br>
+                <button type="submit">Find Your Perfect Tour</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 We Plan. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
