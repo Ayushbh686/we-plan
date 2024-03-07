@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Replace with your desired background image URL */
+    background-image: url("mesut-kaya-eOcyhe5-9sQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex; /* Added for responsive layout */
+    animation: grow 24s ease-in-out infinite;
+    align-items: center; /* Added for responsive layout (vertical centering) */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Added subtle border radius */
+    width: 100%; /* Added width for responsiveness */
+    margin: 0 auto; /* Added margin for centering */
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+main {
+    display: flex; /* Added for responsive layout */
+    justify-content: center; /* Added for responsive layout */
+    width: 80%; /* Added width for responsiveness */
+    margin: 0 auto; /* Added margin for centering */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px; /* Added subtle border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049; /* Darker green on hover */
+}
+
+#loading-message, #results-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Optional styles for better responsiveness */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+}
+@keyframes grow{
+    0%{
+        background-image: url("mesut-kaya-eOcyhe5-9sQ-unsplash.jpg");
+    }
+    33%{
+        background-image: url("jack-anstey-XVoyX7l9ocY-unsplash.jpg");
+    }
+    66%{
+        background-image: url("jeshoots-com-mSESwdMZr-A-unsplash.jpg");
+    }
+    100%{
+        background-image: url("felix-rostig-UmV2wr-Vbq8-unsplash.jpg");
+    }
+
+
+
+}
